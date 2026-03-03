@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakaria Elass — Architecte | Khouribga, Maroc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="SRC/logo pet.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Moroccan Geometric Background -->
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Grain Overlay -->
+    <div class="grain-overlay"></div>
+
+    <!-- ===================== INTRO ANIMATION ===================== -->
+    <div id="intro" class="intro">
+        <!-- Moroccan 8-Pointed Star SVG -->
+        <svg class="intro-star" viewBox="0 0 200 200" fill="none">
+            <circle class="intro-star-circle" cx="100" cy="100" r="85" stroke-width="0.3"/>
+            <circle class="intro-star-circle intro-star-circle--inner" cx="100" cy="100" r="45" stroke-width="0.3"/>
+            <rect class="intro-star-sq" x="54" y="54" width="92" height="92" rx="1" stroke-width="0.6"/>
+            <rect class="intro-star-sq intro-star-sq--rotated" x="54" y="54" width="92" height="92" rx="1" stroke-width="0.6" transform="rotate(45 100 100)"/>
+        </svg>
+
+        <div class="intro-content">
+            <div class="intro-monogram">
+                <span class="intro-mono-letter">Z</span>
+                <span class="intro-mono-letter">E</span>
+            </div>
+            <div class="intro-name">
+                <span>Z</span><span>A</span><span>K</span><span>A</span><span>R</span><span>I</span><span>A</span>
+                <span class="intro-name-space">&nbsp;</span>
+                <span>E</span><span>L</span><span>A</span><span>S</span><span>S</span>
+            </div>
+            <div class="intro-title">ARCHITECTE</div>
+            <div class="intro-location">KHOURIBGA, MAROC</div>
+        </div>
+
+        <div class="intro-corners">
+            <div class="intro-corner intro-corner--tl"></div>
+            <div class="intro-corner intro-corner--tr"></div>
+            <div class="intro-corner intro-corner--bl"></div>
+            <div class="intro-corner intro-corner--br"></div>
+        </div>
+
+        <div class="intro-progress">
+            <div class="intro-progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- ===================== MAIN SITE ===================== -->
+    <div id="site" class="site">
+
+        <!-- Navigation -->
+        <nav class="nav" id="nav">
+            <div class="nav-inner">
+                <a href="#" class="nav-logo">
+                    <img src="SRC/logo pet.png" alt="Zakaria Elass Architecte" class="nav-logo-img">
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#work" data-hover>Projets</a></li>
+                    <li><a href="#about" data-hover>À Propos</a></li>
+                    <li><a href="#services" data-hover>Services</a></li>
+                    <li><a href="#contact" data-hover>Contact</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Basculer la navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-menu-links">
+                <li><a href="#work">Projets</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- ===================== HERO ===================== -->
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <img src="SRC/house Kh.png" alt="Khouribga Architecture" class="hero-bg-img">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-decor">
+                <svg class="hero-star" viewBox="0 0 200 200" fill="none">
+                    <rect x="54" y="54" width="92" height="92" rx="1" stroke-width="0.5" stroke="currentColor"/>
+                    <rect x="54" y="54" width="92" height="92" rx="1" stroke-width="0.5" stroke="currentColor" transform="rotate(45 100 100)"/>
+                </svg>
+            </div>
+            <div class="hero-content">
+                <p class="hero-subtitle reveal-text">Cabinet d'Architecture</p>
+                <h1 class="hero-title">
+                    <span class="hero-title-line reveal-text">Là où l'Héritage</span>
+                    <span class="hero-title-line reveal-text"><em>Façonne l'Avenir</em></span>
+                </h1>
+                <p class="hero-desc reveal-text">Mêlant la beauté intemporelle de l'architecture marocaine à une vision contemporaine audacieuse.</p>
+                <a href="#work" class="btn btn--primary reveal-text" data-hover>
+                    <span>Voir les Projets</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-scroll">
+                <div class="hero-scroll-line"></div>
+                <span>Défiler</span>
+            </div>
+        </section>
+
+        <!-- ===================== MARQUEE ===================== -->
+        <div class="marquee">
+            <div class="marquee-track">
+                <span class="marquee-word">Architecture</span>
+                <span class="marquee-sep">&#10022;</span>
+                <span class="marquee-word">Design</span>
+                <span class="marquee-sep">&#10022;</span>
+                <span class="marquee-word">Patrimoine</span>
+                <span class="marquee-sep">&#10022;</span>
+                <span class="marquee-word">Innovation</span>
+                <span class="marquee-sep">&#10022;</span>
+                <span class="marquee-word">Architecture</span>
+                <span class="marquee-sep">&#10022;</span>
+                <span class="marquee-word">Design</span>
+                <span class="marquee-sep">&#10022;</span>
+                <span class="marquee-word">Patrimoine</span>
+                <span class="marquee-sep">&#10022;</span>
+                <span class="marquee-word">Innovation</span>
+                <span class="marquee-sep">&#10022;</span>
+            </div>
+        </div>
+
+        <!-- ===================== WORK / PROJECTS ===================== -->
+        <section class="work" id="work">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal-text">Portfolio</span>
+                    <h2 class="section-title reveal-text">Nos Réalisations</h2>
+                </div>
+                <div class="work-grid">
+                    <article class="project-card project-card--large reveal-up">
+                        <a href="groupement-habitation.html" class="project-card-link" data-hover>
+                            <div class="project-card-img">
+                                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80" alt="Groupement d'Habitation">
+                                <div class="project-card-overlay">
+                                    <span>Voir les projets</span>
+                                </div>
+                            </div>
+                            <div class="project-card-info">
+                                <span class="project-card-num">01</span>
+                                <div>
+                                    <h3 class="project-card-title">Groupement d'Habitation</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card reveal-up">
+                        <a href="villas.html" class="project-card-link" data-hover>
+                            <div class="project-card-img">
+                                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Villa">
+                                <div class="project-card-overlay">
+                                    <span>Voir les projets</span>
+                                </div>
+                            </div>
+                            <div class="project-card-info">
+                                <span class="project-card-num">02</span>
+                                <div>
+                                    <h3 class="project-card-title">Villa</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card reveal-up">
+                        <a href="industrie.html" class="project-card-link" data-hover>
+                            <div class="project-card-img">
+                                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Industrie">
+                                <div class="project-card-overlay">
+                                    <span>Voir les projets</span>
+                                </div>
+                            </div>
+                            <div class="project-card-info">
+                                <span class="project-card-num">03</span>
+                                <div>
+                                    <h3 class="project-card-title">Industrie</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card project-card--large reveal-up">
+                        <a href="commercial.html" class="project-card-link" data-hover>
+                            <div class="project-card-img">
+                                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="Commercial">
+                                <div class="project-card-overlay">
+                                    <span>Voir les projets</span>
+                                </div>
+                            </div>
+                            <div class="project-card-info">
+                                <span class="project-card-num">04</span>
+                                <div>
+                                    <h3 class="project-card-title">Commercial</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card reveal-up">
+                        <a href="equipements.html" class="project-card-link" data-hover>
+                            <div class="project-card-img">
+                                <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=800&q=80" alt="Équipements Publics">
+                                <div class="project-card-overlay">
+                                    <span>Voir les projets</span>
+                                </div>
+                            </div>
+                            <div class="project-card-info">
+                                <span class="project-card-num">05</span>
+                                <div>
+                                    <h3 class="project-card-title">Équipements Publics</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card reveal-up">
+                        <a href="renovation.html" class="project-card-link" data-hover>
+                            <div class="project-card-img">
+                                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80" alt="Rénovation & Patrimoine">
+                                <div class="project-card-overlay">
+                                    <span>Voir les projets</span>
+                                </div>
+                            </div>
+                            <div class="project-card-info">
+                                <span class="project-card-num">06</span>
+                                <div>
+                                    <h3 class="project-card-title">Rénovation & Patrimoine</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== ABOUT ===================== -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image reveal-up">
+                        <div class="about-image-frame"></div>
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Zakaria Elass Studio">
+                        <svg class="about-star" viewBox="0 0 200 200" fill="none">
+                            <rect x="54" y="54" width="92" height="92" rx="1" stroke-width="0.5" stroke="currentColor"/>
+                            <rect x="54" y="54" width="92" height="92" rx="1" stroke-width="0.5" stroke="currentColor" transform="rotate(45 100 100)"/>
+                        </svg>
+                    </div>
+                    <div class="about-content">
+                        <span class="section-label reveal-text">À Propos</span>
+                        <h2 class="section-title reveal-text">Enraciné dans la tradition,<br><em>tourné vers l'innovation</em></h2>
+                        <p class="about-text reveal-text">
+                            Zakaria Elass est un architecte basé à Khouribga, au coeur du Maroc.
+                            Son cabinet allie le riche patrimoine architectural marocain — les riads,
+                            les arches, les motifs géométriques — à une vision contemporaine audacieuse.
+                            Chaque projet est une conversation entre passé et avenir, entre terre et lumière.
+                        </p>
+                        <div class="about-stats">
+                            <div class="about-stat reveal-up">
+                                <span class="about-stat-number" data-target="10">0</span><span class="about-stat-plus">+</span>
+                                <span class="about-stat-label">Années d'Expérience</span>
+                            </div>
+                            <div class="about-stat reveal-up">
+                                <span class="about-stat-number" data-target="60">0</span><span class="about-stat-plus">+</span>
+                                <span class="about-stat-label">Projets Réalisés</span>
+                            </div>
+                            <div class="about-stat reveal-up">
+                                <span class="about-stat-number" data-target="8">0</span>
+                                <span class="about-stat-label">Prix & Distinctions</span>
+                            </div>
+                            <div class="about-stat reveal-up">
+                                <span class="about-stat-number" data-target="3">0</span>
+                                <span class="about-stat-label">Régions du Maroc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SERVICES ===================== -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal-text">Expertise</span>
+                    <h2 class="section-title reveal-text">Nos Services</h2>
+                </div>
+                <div class="services-list">
+                    <div class="service-item reveal-up" data-service="1">
+                        <div class="service-item-header">
+                            <div class="service-item-left">
+                                <span class="service-item-num">01</span>
+                                <h3 class="service-item-title">Conception Architecturale</h3>
+                            </div>
+                            <button class="service-item-toggle" aria-label="Développer">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <line x1="12" y1="5" x2="12" y2="19" class="service-toggle-v"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="service-item-body">
+                            <p>Du concept à la réalisation, nous concevons des espaces qui allient fonctionnalité, esthétique et identité marocaine. Résidentiel, commercial, culturel — chaque projet est unique.</p>
+                            <ul class="service-features">
+                                <li>Études de faisabilité</li>
+                                <li>Avant-projet sommaire & détaillé</li>
+                                <li>Dossier d'exécution</li>
+                                <li>Suivi de chantier</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-item reveal-up" data-service="2">
+                        <div class="service-item-header">
+                            <div class="service-item-left">
+                                <span class="service-item-num">02</span>
+                                <h3 class="service-item-title">Architecture d'Intérieur</h3>
+                            </div>
+                            <button class="service-item-toggle" aria-label="Développer">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <line x1="12" y1="5" x2="12" y2="19" class="service-toggle-v"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="service-item-body">
+                            <p>Nous créons des intérieurs qui racontent une histoire — entre zellige traditionnel et lignes épurées, entre lumière naturelle et matériaux nobles.</p>
+                            <ul class="service-features">
+                                <li>Aménagement d'espace</li>
+                                <li>Choix des matériaux</li>
+                                <li>Mobilier sur mesure</li>
+                                <li>Éclairage & ambiance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-item reveal-up" data-service="3">
+                        <div class="service-item-header">
+                            <div class="service-item-left">
+                                <span class="service-item-num">03</span>
+                                <h3 class="service-item-title">Urbanisme</h3>
+                            </div>
+                            <button class="service-item-toggle" aria-label="Développer">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <line x1="12" y1="5" x2="12" y2="19" class="service-toggle-v"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="service-item-body">
+                            <p>Nous façonnons des quartiers et des communautés à travers un urbanisme réfléchi, respectueux du tissu urbain marocain et tourné vers un développement durable.</p>
+                            <ul class="service-features">
+                                <li>Plans d'aménagement</li>
+                                <li>Lotissements</li>
+                                <li>Études d'impact</li>
+                                <li>Espaces publics</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-item reveal-up" data-service="4">
+                        <div class="service-item-header">
+                            <div class="service-item-left">
+                                <span class="service-item-num">04</span>
+                                <h3 class="service-item-title">Rénovation & Patrimoine</h3>
+                            </div>
+                            <button class="service-item-toggle" aria-label="Développer">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <line x1="12" y1="5" x2="12" y2="19" class="service-toggle-v"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="service-item-body">
+                            <p>Nous redonnons vie aux bâtiments existants, en préservant leur âme tout en les adaptant aux exigences contemporaines. Chaque rénovation est un acte de respect et de renouveau.</p>
+                            <ul class="service-features">
+                                <li>Restauration patrimoniale</li>
+                                <li>Mise en conformité</li>
+                                <li>Extension & surélévation</li>
+                                <li>Réhabilitation thermique</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CONTACT ===================== -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <span class="section-label reveal-text">Contact</span>
+                        <h2 class="section-title reveal-text">Construisons<br>ensemble votre<br><em>projet</em></h2>
+                        <div class="contact-details reveal-up">
+                            <div class="contact-detail">
+                                <span class="contact-detail-label">Email</span>
+                                <a href="mailto:contact@ze-architecte.ma" data-hover>contact@ze-architecte.ma</a>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="contact-detail-label">Téléphone</span>
+                                <a href="tel:+212523000000" data-hover>+212 5 23 00 00 00</a>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="contact-detail-label">Adresse</span>
+                                <p>Bd Mohammed V<br>Khouribga 25000, Maroc</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form reveal-up" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom complet">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="projectType">Type de projet</label>
+                            <select id="projectType" name="projectType" required>
+                                <option value="" disabled selected>Choisir un type</option>
+                                <option value="residential">Résidentiel</option>
+                                <option value="commercial">Commercial</option>
+                                <option value="cultural">Culturel / Institutionnel</option>
+                                <option value="renovation">Rénovation</option>
+                                <option value="urban">Urbanisme</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary" data-hover>
+                            <span>Envoyer</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== FOOTER ===================== -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo">
+                            <span>Z</span><span>E</span>
+                        </a>
+                        <p class="footer-tagline">Cabinet d'architecture de Zakaria Elass. Khouribga, Maroc. Alliant patrimoine marocain et vision contemporaine depuis 2014.</p>
+                    </div>
+                    <div class="footer-nav">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#work" data-hover>Projets</a></li>
+                            <li><a href="#about" data-hover>À Propos</a></li>
+                            <li><a href="#services" data-hover>Services</a></li>
+                            <li><a href="#contact" data-hover>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h4>Réseaux</h4>
+                        <ul>
+                            <li><a href="#" data-hover>Instagram</a></li>
+                            <li><a href="#" data-hover>LinkedIn</a></li>
+                            <li><a href="#" data-hover>Behance</a></li>
+                            <li><a href="#" data-hover>Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Zakaria Elass Architecte. Tous droits réservés.</p>
+                    <svg class="footer-star" viewBox="0 0 200 200" fill="none">
+                        <rect x="54" y="54" width="92" height="92" rx="1" stroke-width="0.8" stroke="currentColor"/>
+                        <rect x="54" y="54" width="92" height="92" rx="1" stroke-width="0.8" stroke="currentColor" transform="rotate(45 100 100)"/>
+                    </svg>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
